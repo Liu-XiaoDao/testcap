@@ -13,7 +13,7 @@ set :use_sudo, false
 
 set :keep_releases, 10
 
-default_run_options[:pty] = true
+# default_run_options[:pty] = true
 
 # namespace :passenger do
 #   desc 'Restart Application'
@@ -28,7 +28,7 @@ default_run_options[:pty] = true
 #     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
 #   end
 # end
-# 
+#
 # after 'deploy:assets:symlink', 'deploy:link_database'
 # after 'deploy:link_database', 'deploy:migrate'
 # after :deploy, 'passenger:restart'
