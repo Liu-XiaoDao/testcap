@@ -1,11 +1,11 @@
-set :application, 'robot'
+set :application, 'testcap'
 
 # server '10.8.1.36', roles: [:app, :web, :db], primary: true
 
-set :deploy_to, "/usr/rubyWeb/#{fetch(:application)}"
+set :deploy_to, "/home/blog/test/#{fetch(:application)}"
 set :rails_env, 'production'
 set :branch, "master"
-server "10.8.1.36", user: "clliu", roles: %w{app db web}, my_property: :my_value
+server "116.196.118.148", user: "blog", roles: %w{app db web}, my_property: :my_value
 # set :user, 'clliu'
 # set :password, 'clliu'
 set :use_sudo, true

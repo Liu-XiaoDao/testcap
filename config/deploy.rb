@@ -43,11 +43,11 @@ lock "~> 3.10.1"
 set :stages, %w(production staging)
 set :default_stage, 'staging'
 
-set :application, "it_asset"
+set :application, "testcap"
 
 set :deploy_user, 'xiaodao'
 
-set :repo_url, 'git@github.com:Liu-XiaoDao/chat_robot.git'
+set :repo_url, 'git@github.com:Liu-XiaoDao/testcap.git'
 
 set :branch, 'master'
 # set :scm_verbose, true
