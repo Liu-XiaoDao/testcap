@@ -69,15 +69,14 @@ set :config_files, %w{config/database.yml config/secrets.yml  config/email.yml}
 
 # precompile assets - locations that we will look for changed assets to determine whether to precompile
 set :assets_dependencies, %w(app/assets lib/assets Gemfile config/routes.rb)
-
+set :bundle_path, -> { shared_path.join('bundle') } 
 
 namespace :deploy do
   namespace :assets do
     desc "Precompile assets if changed"
     task :precompile do
       on roles(:app) do
-        # invoke 'deploy:assets:precompile_changed'
-        puts "caocao"
+        invoke 'deploy:assets:precompile_changed'
         #Rake::Task["deploy:assets:precompile_changed"].invoke
       end
     end
