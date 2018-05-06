@@ -46,6 +46,7 @@ GEM
     bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.2)
+    cancan (1.6.10)
     capistrano (3.10.1)
       airbrussh (>= 1.0.0)
       i18n
@@ -230,6 +231,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  cancan (~> 1.6, >= 1.6.10)
   capistrano (~> 3.10)
   capistrano-passenger
   capistrano-rails (~> 1.1)
