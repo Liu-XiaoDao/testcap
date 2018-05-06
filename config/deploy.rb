@@ -76,7 +76,8 @@ namespace :deploy do
     desc "Precompile assets if changed"
     task :precompile do
       on roles(:app) do
-        invoke 'deploy:assets:precompile_changed'
+        # invoke 'deploy:assets:precompile_changed'
+        puts "caocao"
         #Rake::Task["deploy:assets:precompile_changed"].invoke
       end
     end
