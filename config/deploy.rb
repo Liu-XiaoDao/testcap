@@ -69,7 +69,7 @@ set :config_files, %w{config/database.yml config/secrets.yml  config/email.yml}
 
 # precompile assets - locations that we will look for changed assets to determine whether to precompile
 set :assets_dependencies, %w(app/assets lib/assets Gemfile config/routes.rb)
-set :bundle_path, -> { "/home/blog/.rvm/gems/ruby-2.3.1" } 
+# set :bundle_path, -> { "/home/blog/.rvm/gems/ruby-2.3.1" } 
 
 namespace :deploy do
   namespace :assets do
