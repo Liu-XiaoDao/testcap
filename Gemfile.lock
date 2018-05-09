@@ -231,7 +231,6 @@ DEPENDENCIES
   byebug
   cancan (~> 1.6, >= 1.6.10)
   capistrano (~> 3.10)
-  capistrano-bundler (~> 1.1)
   capistrano-rails (~> 1.1)
   capistrano-rvm (~> 0.1)
   capybara (~> 2.13)
